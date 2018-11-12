@@ -1,0 +1,67 @@
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="w3ls-footer-grids">
+            <div class="col-md-3 w3l-footer-grid">
+                <h4>公司地址</h4>
+                <ul>
+                    <li>秋什科技有限责任公司</li>
+                    <li>上海市静安区大宁音乐广场B座603室 </li>
+                    <li>地铁一号线上海马戏城3号口延广中西路向前1000米</li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3l-footer-grid">
+                <h4>联系我们</h4>
+                <ul>
+                    <li>电话: 021-66290029</li>
+                    <li>传真: +1 646-216-9789</li>
+                    <li>邮箱: <a href="mailto:info@example.com">Neessy@Creamyice.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 w3l-footer-grid">
+                <h4>立即订阅我们</h4>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="请输入您的邮箱" required="required">
+                    <input type="submit" value=" ">
+                </form>
+            </div>
+            <div class="col-md-3 w3l-footer-grid">
+                <h4>版权所有</h4>
+                <p>上海秋什科技有限公司 沪ICP 62859862备案</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</footer>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="__JSS__/move-top.js"></script>
+<script type="text/javascript" src="__JSS__/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+<!-- //here ends scrolling icon -->
+</body>
+</html>

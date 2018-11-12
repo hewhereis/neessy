@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{$title}</title>
+    <link rel="icon" href="__IMG__/icon.jpg" />
+    <link href="__CSS__/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /><!-- fontawesome -->
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" /><!-- Bootstrap stylesheet -->
+    <link href="__CSS__/style.css" rel="stylesheet" type="text/css" media="all" /><!-- stylesheet -->
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //meta tags -->
+    <!--fonts-->
+  <!--  <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">-->
+    <!--//fonts-->
+    <script type="text/javascript" src="__JS__/jquery-2.1.4.min.js"></script><!-- Required-js -->
+    <script src="__JS__/bootstrap.min.js"></script><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- scriptfor smooth drop down-nav -->
+    <script>
+        $(document).ready(function(){
+            $(".dropdown").hover(
+                function() {
+                    $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //script for smooth drop down-nav -->
+</head>
+<body>
+<div class="w3-slider">
+    <!-- header -->
+    <header>
+        <div class="w3layouts-top-strip">
+            <div class="container-fluid">
+                <div class="w3ls-social-icons">
+                    <a class="twitter" href="#"><i class="fa">N</i></a>
+                    <a class="twitter" href="#"><i class="fa">e</i></a>
+                    <a class="twitter" href="#"><i class="fa">e</i></a>
+                    <a class="twitter" href="#"><i class="fa">s</i></a>
+                    <a class="twitter" href="#"><i class="fa">s</i></a>
+                    <a class="twitter" href="#"><i class="fa">y</i></a>
+                    <!--<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+                    <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                    <a class="tumblr" href="#"><i class="fa fa-tumblr"></i></a>-->
+                </div>
+                <div class="agileits-contact-info text-right">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>021 - 6259 0029</li>
+                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">neessy@creamyice.com</a></li>
+                    </ul>
+                </div>
+                <div class="logo text-center">
+                    <h1><a href="index.html">Business Strategy</a></h1>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <div class="w3layouts-inner-banner">
+    </div>
+</div>
+<div class="clearfix"></div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a {$title=='首页'?'class="active"':''} href="/">首页</a></li>
+                <li><a {$title=='关于我们'?'class="active"':''} href="{:url('index/index/about')}">关于我们</a></li>
+                <li><a {$title=='公司服务'?'class="active"':''} href="{:url('index/index/services')}">公司服务</a></li>
+                <li><a {$title=='合作商户'?'class="active"':''} href="{:url('index/dynamic/portfolio')}">合作商户</a></li>
+                <li><a {$title=='公司博客'?'class="active"':''} href="{:url('index/dynamic/blog')}">公司博客</a></li>
+                <!--<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="typo.html">Short Codes</a></li>
+                        <li><a href="icons.html">Icons Page</a></li>
+                    </ul>
+                </li>-->
+                <li><a {$title=='联系我们'?'class="active"':''} href="{:url('index/index/contact')}">联系我们</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
