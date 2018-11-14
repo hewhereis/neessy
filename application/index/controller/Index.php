@@ -5,6 +5,9 @@ use think\Controller;
 
 class Index extends Controller
 {
+   /* protected $middleware =  [
+        'Check'
+    ];*/
     /**
      * @return view/index/index.html
      * Desc:   首页
@@ -12,7 +15,7 @@ class Index extends Controller
     public function index()
     {
         $this->assign('title','首页');
-       return $this->fetch();
+        return $this->fetch();
     }
 
     /**

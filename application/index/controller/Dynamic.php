@@ -18,7 +18,7 @@ class Dynamic extends Controller
      * Desc:  博客列表页面
      */
     public function blog(){
-        $this->assign('title','公司博客');
+        $this->assign('title','公司新闻');
         return $this->fetch();
     }
 
@@ -45,7 +45,7 @@ class Dynamic extends Controller
      * Desc:  博客详情页
      */
     public function single(){
-        $this->assign('title','博客详情');
+        $this->assign('title','新闻详情');
         return $this->fetch();
     }
 
